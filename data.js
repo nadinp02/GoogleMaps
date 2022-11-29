@@ -22,7 +22,7 @@ let hotels = [
         address: "Gran Via de les Corts Catalanes, 619-621",
         phone: "93 111111",
         categoria: "1",
-        descripcion: "Descripcion",
+        descripcion: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
         imagen: "/icons/imagen.jpg"
     },
     {
@@ -31,7 +31,9 @@ let hotels = [
         lng: 2.1639552116394043,
         address: "Passeig de Gracias 68-70",
         phone: "93 222222",
-        categoria: "2"
+        categoria: "2",
+        descripcion: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        imagen: ""
     },
     {
         name: "Hotel Miramar Barcelona GL",
@@ -39,7 +41,9 @@ let hotels = [
         lng: 2.1714038848876953,
         address: "Plaza de Carlos Ibañez 3",
         phone: "93 333333",
-        categoria: "3" 
+        categoria: "3" ,
+        descripcion: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        imagen: "/icons/imagen.jpg"
     },
     {
         name: "Le Meridien - Ra",
@@ -47,7 +51,9 @@ let hotels = [
         lng: 1.5628249,
         address: "C/De la mar blava",
         phone: "93 88888",
-        categoria: "1"
+        categoria: "1",
+        descripcion: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        imagen: "/icons/imagen.jpg"
     }
 
 ]

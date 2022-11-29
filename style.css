@@ -10,10 +10,9 @@ html, body{
 
 .hotel__list{
     position: absolute;
-    top:70vh;
     left: 5vw;
     bottom: 5vh;
-    width: fit-content;
+    width: 400px;
     box-shadow: 0 2px 7px 7px rgba(0,0,0,0.1);
     z-index: 5;
     color: #333;
@@ -25,6 +24,23 @@ html, body{
     flex-direction: column;
     justify-content: space-between;
 }
+
+.h5, h5 {
+    font-size: 16px;
+    font-weight: bold;
+    color:rgb(112, 112, 112);
+    line-height: 0%;
+    margin-top: 1.2rem;
+
+}
+
+
+hr {
+    margin-top: 1.2rem;
+    border: 0;
+    border-top: 3px solid rgba(0,0,0,.1);
+}
+
 .hotel__individualNames{
     color:#333;
 }
@@ -32,10 +48,13 @@ html, body{
 
 .hotel__names{
     flex: 1;
-    padding: 2rem;
+    padding: 1rem;
     cursor: pointer;
     
 }
+
+
+/* ----INFOWINDOWS---- */
 
 .window{
     height: fit-content;

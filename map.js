@@ -14,7 +14,7 @@ const setListener = () => {
 const displayListCategories = () => {
     let categoriaList = "";
     categorias.forEach(categoria => {
-        categoriaList += `<h5 class="category_list" id="${categoria.id}">${categoria.name}</h5>`
+        categoriaList += `<h5 class="category_list" id="${categoria.id}">${categoria.name}</h5><hr>`
     })
     document.getElementById("hotel__names").innerHTML = categoriaList;
 }
@@ -41,7 +41,9 @@ const createMarker = (hotel) => {
 
 const showModal = (data) => {
     $("h2").html(data.name)
-    $("p").html(data.categoria) 
+    $("h4").html(data.address)
+    $("p").html(data.descripcion)
+    $("src").html(data.imagen) 
     $("#myModal").modal("show");
 }
 
