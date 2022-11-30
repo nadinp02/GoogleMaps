@@ -2,58 +2,61 @@
 let categorias = [
     {
         name: "Paradas de Colectivo",
-        id: "1"
+        id: "1",
+        icon: "icons/bus_stop.png"
     },
     {
         name: "Informacion Util",
-        id: "2"
+        id: "2",
+        icon: "icons/search.png"
     },
     {
         name: "Luminarias",
-        id: "3"
+        id: "3",
+        icon: "icons/luz-de-la-calle.png"
     }
 ]
 
 let hotels = [
     {
-        name: "Hotel Almanac",
-        lat: 41.3907533,
-        lng: 2.1694134,
-        address: "Gran Via de les Corts Catalanes, 619-621",
+        name: "Terminar de Ómnibus",
+        lat: -31.4293312,
+        lng: -62.093154,
+        address: "Av. Juan Bautista Justo 67",
         phone: "93 111111",
         categoria: "1",
         descripcion: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-        imagen: "/icons/imagen.jpg"
+        imagen: "icons/terminal.jpg"
     },
     {
-        name: "Majestic Hotel & Spa",
-        lat: 41.39348602294922,
-        lng: 2.1639552116394043,
-        address: "Passeig de Gracias 68-70",
+        name: "Info San Francisco",
+        lat: -31.433918,
+        lng:  -62.079064,
+        address: "",
         phone: "93 222222",
         categoria: "2",
         descripcion: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-        imagen: ""
+        imagen: "icons/ciudad.jpg"
     },
     {
-        name: "Hotel Miramar Barcelona GL",
-        lat: 41.3700679643555,
-        lng: 2.1714038848876953,
-        address: "Plaza de Carlos Ibañez 3",
+        name: "Epec",
+        lat: -31.4270852,
+        lng: -62.0873522,
+        address: "Av. del Libertador Norte 211",
         phone: "93 333333",
         categoria: "3" ,
         descripcion: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-        imagen: "/icons/imagen.jpg"
+        imagen: "icons/epec.jpg"
     },
     {
-        name: "Le Meridien - Ra",
-        lat: 41.1865574,
-        lng: 1.5628249,
-        address: "C/De la mar blava",
+        name: "Parada de Colectivo",
+        lat: -31.426031,
+        lng: -62.112015,
+        address: "Av. Cervantes",
         phone: "93 88888",
         categoria: "1",
         descripcion: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-        imagen: "/icons/imagen.jpg"
+        imagen: "icons/parada.jpg"
     }
 
 ]

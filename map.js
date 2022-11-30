@@ -13,6 +13,7 @@ const setListener = () => {
 //list categorias
 const displayListCategories = () => {
     let categoriaList = "";
+    categoriaList += `<h5 class="category_list" id="">TODOS</h5><hr>`
     categorias.forEach(categoria => {
         categoriaList += `<h5 class="category_list" id="${categoria.id}">${categoria.name}</h5><hr>`
     })
@@ -22,12 +23,23 @@ const displayListCategories = () => {
 
 const createMarker = (hotel) => {
     let coord = new google.maps.LatLng(hotel.lat, hotel.lng)
+    let icon = ""
 
+    if(hotel.categoria == 1){
+        icon= "./icons/bus_stop.png"
+     }else if(hotel.categoria == 2){
+         icon= "./icons/search.png"
+     }else{
+         icon="./icons/luminaria.png"
+     }
     const marker = new google.maps.Marker({
         position: coord,
         map: map,
+        icon
+
         // icon: "./icons/marker.png"
     })
+
 
     google.maps.event.addListener(marker, "click", () => {
         showModal(hotel);
@@ -40,10 +52,10 @@ const createMarker = (hotel) => {
 // infoWindow.open(map, marker)
 
 const showModal = (data) => {
-    $("h2").html(data.name)
-    $("h4").html(data.address)
-    $("p").html(data.descripcion)
-    $("src").html(data.imagen) 
+    $("#myModal h2").html(data.name)
+    $("#myModal h4").html(data.address)
+    $("#myModal p").html(data.descripcion)
+    $("#myModal img").attr("src",data.imagen) 
     $("#myModal").modal("show");
 }
 
@@ -69,7 +81,7 @@ const createLocationMarkers = (category = "") => {
 }
 
 function initMap() {
-    let barcelona = { lat: 41.390205, lng: 2.154007 }
+    let barcelona = { lat: -31.4279700, lng: -62.0826600}
     map = new google.maps.Map(document.getElementById("map"), {
         center: barcelona,
         zoom: 14,
